@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MyCustomView">
-        <attr name="attr_one" format="string"/>
-        <attr name="attr_two" format="integer"/>
-        <attr name="extraInformation" format="string" />
+        <attr name="action_bar_background_color" format="color" />
+        <attr name="action_bar_text_color" format="color"/>
+        <attr name="action_bar_title" format="string"/>
+        <attr name="action_bar_back_button_icon" format="integer"/>
     </declare-styleable>
 </resources>

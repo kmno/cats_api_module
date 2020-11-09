@@ -6,20 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <com.kamran.cats.MyCustomView
-        android:id="@+id/MyCustomView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:attr_one="sajdklajsdklsaj"
-        app:attr_two="3"
-        app:extraInformation="dsdsdsdsdsdsdsdsdsdsdsdsdsd"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/go_to_cats_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Watch the Cats!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-    </com.kamran.cats.MyCustomView>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
