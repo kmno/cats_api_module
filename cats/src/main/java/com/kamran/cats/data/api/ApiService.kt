@@ -5,13 +5,13 @@
  * http://www.itskamran.ir/
  */
 
-package com.kamran.cats
+package com.kamran.cats.data.api
 
 import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
+import com.kamran.cats.data.model.Cat
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.POST
 import retrofit2.http.Query
 
 /**

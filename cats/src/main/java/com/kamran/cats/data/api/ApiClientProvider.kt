@@ -5,11 +5,11 @@
  * http://www.itskamran.ir/
  */
 
-package com.kamran.cats
+package com.kamran.cats.data.api
 
 import android.util.Log
 import com.google.gson.GsonBuilder
-import com.kamran.cats.Constants
+import com.kamran.cats.core.Constants
 import okhttp3.Dispatcher
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

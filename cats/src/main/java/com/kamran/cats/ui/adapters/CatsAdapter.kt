@@ -4,17 +4,16 @@
  * Copyright: All rights reserved Ⓒ 2020
  */
 
-package com.kamran.cats.adapters
+package com.kamran.cats.ui.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
-import com.kamran.cats.Cat
+import com.kamran.cats.data.model.Cat
 import com.kamran.cats.R
 import kotlinx.android.synthetic.main.cats_recyclerview_item.view.*
 

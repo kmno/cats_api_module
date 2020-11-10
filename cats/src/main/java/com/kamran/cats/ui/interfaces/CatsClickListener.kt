@@ -1,4 +1,4 @@
-package com.kamran.cats
+package com.kamran.cats.ui.interfaces
 
 /**
  * Created by Kamran Noorinejad on 11/9/2020 AD 19:13.

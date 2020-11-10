@@ -1,4 +1,4 @@
-package com.kamran.cats
+package com.kamran.cats.core
 
 import android.graphics.drawable.Drawable
 

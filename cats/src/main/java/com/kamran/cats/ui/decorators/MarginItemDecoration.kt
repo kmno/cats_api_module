@@ -1,4 +1,4 @@
-package com.kamran.cats
+package com.kamran.cats.ui.decorators
 
 import android.graphics.Rect
 import android.view.View

@@ -1,4 +1,4 @@
-package com.kamran.cats
+package com.kamran.cats.core
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -10,10 +10,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kamran.cats.adapters.CatsAdapter
+import com.kamran.cats.R
+import com.kamran.cats.ui.adapters.CatsAdapter
+import com.kamran.cats.data.api.ApiClientProvider
+import com.kamran.cats.data.model.Cat
+import com.kamran.cats.ui.interfaces.CatsClickListener
 import kotlinx.android.synthetic.main.main_layout.view.*
 import kotlinx.android.synthetic.main.toolbar.view.*
 import kotlinx.coroutines.Dispatchers

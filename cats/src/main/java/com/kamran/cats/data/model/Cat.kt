@@ -1,8 +1,6 @@
-package com.kamran.cats
+package com.kamran.cats.data.model
 
-import androidx.room.ColumnInfo
 import com.google.gson.annotations.SerializedName
-import java.lang.reflect.Array
 
 /**
  * Created by Kamran Noorinejad on 11/9/2020 AD 14:55.

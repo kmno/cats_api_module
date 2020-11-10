@@ -1,4 +1,4 @@
-package com.kamran.cats
+package com.kamran.cats.core
 
 import android.app.Dialog
 import android.content.Context
@@ -16,7 +16,12 @@ import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.kamran.cats.adapters.CatsAdapter
+import com.kamran.cats.R
+import com.kamran.cats.ui.adapters.CatsAdapter
+import com.kamran.cats.data.api.ApiClientProvider
+import com.kamran.cats.ui.decorators.MarginItemDecoration
+import com.kamran.cats.data.model.Cat
+import com.kamran.cats.ui.interfaces.CatsClickListener
 import kotlinx.android.synthetic.main.main_layout.view.*
 import kotlinx.android.synthetic.main.toolbar.view.*
 import kotlinx.coroutines.Dispatchers
@@ -87,8 +92,10 @@ class CatsListDialog(_context: Context) : AppCompatDialogFragment() {
         dialogView.cats_recyclerview.apply {
             layoutManager = listViewManager
             adapter = catsAdapter
-            addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.cats_container_margin)
-                .toInt()))
+            addItemDecoration(
+                MarginItemDecoration(resources.getDimension(R.dimen.cats_container_margin)
+                .toInt())
+            )
             visibility = View.VISIBLE
             dialogView.loading_text.visibility = View.GONE
         }

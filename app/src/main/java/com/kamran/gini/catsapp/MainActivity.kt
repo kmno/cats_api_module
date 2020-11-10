@@ -1,12 +1,10 @@
 package com.kamran.gini.catsapp
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import coil.api.load
-import com.kamran.cats.CatsClickListener
-import com.kamran.cats.CatsListDialog
-import kotlinx.android.synthetic.main.activity_cats.*
+import com.kamran.cats.ui.interfaces.CatsClickListener
+import com.kamran.cats.core.CatsListDialog
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.selected_cat_image
 
