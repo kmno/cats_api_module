@@ -62,9 +62,10 @@ class CatsListDialog(_context: Context) : AppCompatDialogFragment() {
 
         builder
             .setView(dialogView)
-            .setCancelable(CANCELABLE)
 
         dialogView.back_button.setOnClickListener { dismiss() }
+
+        isCancelable = CANCELABLE
 
         GlobalScope.launch(Dispatchers.Main) { callApiTest() }
 
@@ -134,11 +135,6 @@ class CatsListDialog(_context: Context) : AppCompatDialogFragment() {
 
     fun backIcon(@DrawableRes iconResourceId: Int): CatsListDialog {
         dialogView.back_button.setImageDrawable(ContextCompat.getDrawable(ctx, iconResourceId))
-        return this
-    }
-
-    fun cancelable(cancelable: Boolean): CatsListDialog {
-        builder.setCancelable(cancelable).create()
         return this
     }
 

@@ -26,16 +26,4 @@ interface ApiService {
         @Query("size", encoded = true) size: String,
         @Query("limit", encoded = true) limit: Int
     ): Response<List<Cat>>
-
-    @GET("images/")
-    suspend fun getImage(
-        @Query("apiKey", encoded = true) api_key: String,
-        @Query("image_id", encoded = true) size: String
-    ): Response<Cat>
-
 }
-
-@Keep
-data class ServiceResponse<T>(
-    @SerializedName("response") val response: T
-)
