@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ImageButton
         android:id="@+id/back_button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00838F"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_default_color"
         android:src="@drawable/ic_back"
         android:scaleType="center"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/header_toolbar_title"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#00838F"
+        android:layout_height="@dimen/toolbar_height"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
-        android:text="CATS"
-        android:textColor="#FFF"
-        android:textSize="16sp"
+        android:background="@color/toolbar_default_color"
+        android:text="@string/toolbar_default_title"
+        android:textColor="@color/toolbar_default_text_color"
+        android:textSize="17sp"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/back_button"/>
 

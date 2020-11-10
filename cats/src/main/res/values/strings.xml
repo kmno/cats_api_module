@@ -1,0 +1,5 @@
+<resources>
+    <string name="toolbar_default_title">Select a Cat :</string>
+    <string name="loading">fetcing cats ...</string>
+    <string name="network_error">Something went wrong!\nTry Again later.</string>
+</resources>

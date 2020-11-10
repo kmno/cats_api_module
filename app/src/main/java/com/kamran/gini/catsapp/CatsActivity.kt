@@ -20,6 +20,5 @@ class CatsActivity : AppCompatActivity(), CatsClickListener {
 
     override fun getCatImage(url: String) {
         Log.e("CATS ACTIITY", url)
-        selected_cat_image.load(url)
     }
 }
